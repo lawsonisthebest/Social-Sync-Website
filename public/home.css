@@ -1,0 +1,439 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.pricing a, .contact a, .about a{
+    color: rgb(95, 95, 250);
+    text-decoration: none;
+}
+
+.login a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.bookAppointment a{
+    text-decoration: none;
+    color: rgb(95, 95, 250);
+}
+
+.signUp a{
+    color: rgb(95, 95, 250);
+    text-decoration: none;
+}
+
+.signUp a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.Header{
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.rightOptions, .leftOptions{
+    flex: 1;
+}
+
+.rightOptions{
+    display: flex;
+    justify-content: end;
+    gap: 1vw;
+}
+
+.leftOptions{
+    display: flex;
+    justify-content: start;
+    gap: 1.5vw;
+}
+
+.rightOptions button{
+    font-size: clamp(.5rem, 2vw, 1.5rem);
+    padding-left: clamp(.75rem, .75vw, 1rem);
+    padding-right: clamp(.75rem, 1vw, 1rem);
+    padding: clamp(.5rem, .75vw, .75rem);
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.signUp{
+    color: rgb(103, 103, 239);
+    border: 3px solid rgb(103, 103, 239);
+    background: none;
+    transition: .25s;
+}
+.signUp:hover{
+    color: white;
+    background-color: rgb(103, 103, 239);
+    border: 3px solid rgb(103, 103, 239);
+    transform: scale(1.1);
+}
+
+.login{
+    background-color: rgb(103, 103, 239);
+    border: none;
+    color: white;
+    transition: .25s;
+}
+.login:hover{
+    background-color: rgb(82, 82, 198);
+    border: none;
+    color: white;
+    transform: scale(1.1);
+}
+
+.leftOptions button{
+    font-size: clamp(.5rem, 2.5vw, 2rem);
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: rgb(95, 95, 250);
+    transition: .25s;
+}
+.leftOptions button:hover{
+    color: rgb(74, 74, 208);
+    transform: scale(1.1);
+}
+
+
+
+
+
+.slide1{
+    background: linear-gradient(rgb(100, 111, 255), rgb(74, 72, 220));
+    padding-top: 7.5vw;
+    padding-bottom: 7.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    transition: .5s;
+}
+
+.slide1 .img img{
+    width: 37.5vw;
+    border-radius: 2vw;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    box-shadow: 5px 5px 6px rgb(0, 0, 0, 0.35);
+}
+
+.slide1 .info .title{
+    color: white;
+    font-size: 4vw;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+
+}
+
+.slide1 .info{
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.slide1 .info h1, .slide1 .info ul, .slide1 .info button, .slide1 .info ul li p{
+    margin: 0;
+    text-align: left;
+}
+
+.slide1 .info ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    color: white;
+    gap: 15px;
+    font-size: 1.5vw;
+
+}
+.slide1 .info ul li{
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+}
+.slide1 .info button{
+    width: max-content;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 2vw;
+    color: rgb(89, 89, 232);
+    background-color: white;
+    border-radius: 15vw;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+    transition: .5s;
+}
+.slide1 .info button:hover{
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.25);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.slide2{
+    transition: .5s;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide2 .info{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide2 .info h1{
+    color: rgb(89, 89, 232);
+    margin-top: 2.5vw;
+    margin-bottom: 0;
+    font-size: 4.75vw;
+}
+.slide2 .info p{
+    font-size: 1.75vw;
+    margin: 10px;
+    padding: 0;
+    width: 75%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.slide2 .options{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex: 1fr 1fr 1fr;
+}
+
+.slide2 .options button{
+    margin-top: 5vw;
+    margin-bottom: 0;
+    width: 100%;
+    flex: 1fr 1fr 1fr;
+    transition: .5s;
+}
+.slide2 .options button p{
+    font-size: 2.5vw;
+    margin: 0;
+    font-weight: 100;
+    padding-top: 1vw;
+}
+.slide2 .options button:hover{
+    transform: scale(1.1);
+    filter: brightness(1.15);
+}
+
+.slide2 .options img{
+    border-radius: 25px;
+    width: 20vw;
+    box-shadow: 6px 6px 7px rgb(0, 0, 0, 0.30);
+    transition: .5s;
+}
+.slide2 .options img:hover{
+    border-radius: 25px;
+    width: 20vw;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.25);
+}
+.slide2 .info button{
+    margin-top: 3vw;
+    width: max-content;
+    padding-left: 1.75vw;
+    padding-right: 1.75vw;
+    padding-top: .75vw;
+    padding-bottom: .75vw;
+    font-size: 2vw;
+    background-color: rgb(89, 89, 232);
+    color: white;
+    border-radius: 1.25vw;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+    transition: .5s;
+}
+.slide2 .info button:hover{
+    transform: scale(1.1);
+    background-color: rgb(80, 80, 182);
+}   
+
+
+
+
+
+.slide3{
+    transition: .5s;
+    background: linear-gradient(rgb(125, 125, 255), rgb(57, 72, 187));
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+}
+
+.slide3 .container .options h1{
+    font-size: 3.5vw;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.slide3 .container .options{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    justify-content: center;
+}
+
+.slide3 .container .options ul{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.75vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    text-align: left;
+    padding: 0;
+}
+
+.slide3 .container .options ul li p{
+    font-weight: 500;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+    color: white;
+    text-align: left;
+    margin-left: 0;
+    padding: 0;
+}
+
+.slide3 .container .options .description2{
+    width: 75%;
+    font-size: 1.5vw;
+    margin: 0;
+    font-weight: 300;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+    color: white;
+}
+
+.slide3 .container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.slide3 .container video{
+    margin-right: 2.5vw;
+    width: 35vw;
+    border-radius: 3vw;
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.25);
+}
+
+
+
+.slide4{
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    padding-bottom: 2vw;
+    flex-direction: row;
+    gap: 3vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    transform: scale(.85);
+    background: white;
+}
+
+.slide4 .info h1{
+    text-align: center;
+    color: rgb(89, 89, 232);
+    font-size: 4.5vw; 
+    margin: 0;
+    padding-bottom: 2vw;   
+}
+
+.slide4 .details p{
+    font-size: 2vw; 
+    margin: 0;  
+    text-align: center;
+    font-weight: 400;
+    padding: 0;
+    flex: 1;
+}
+
+.slide4 .details a{
+    color: rgb(89, 89, 232);
+    font-size: 2vw; 
+    margin: 0;  
+    flex: 1; 
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.slide4 .details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.container1{
+    flex: 1;
+    margin: 0;
+}
+.container2{
+    flex: 1;
+    margin: 0;
+}

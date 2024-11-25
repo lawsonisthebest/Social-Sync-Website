@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/bookAppointment.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "-ERaPi8BFR5WWTNnI",
+        });
+        })();
+    </script>
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="Header">
+        <div class="header">
+            <div class="leftOptions">
+                <button class="pricing"><a href="/renderer/home.html">Pricing</a></button>
+                <button class="contact"><a href="/renderer/home.html">Contact</a></button>
+                <button class="about"><a href="/renderer/home.html">About</a></button>
+            </div>
+
+            <div class="rightOptions">
+                <button class="signUp"><a href="bookAppointment.html">Sign Up</a></button>
+                <button class="login"><a href="login.html">Login</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="container">
+            <h1>Book Appointment:</h1>
+            <form>
+                <input class="email" type="text" placeholder="* Email:">
+                <input class="fName" type="text" placeholder="* First Name:">
+                <input class="lName" type="text" placeholder="Last Name:">
+                <input class="phone" type="text" placeholder="* Phone:">
+                <input class="company" type="text" placeholder="Company:">
+                <input class="desiredDate" type="text" placeholder="Desired Date: 01/01/2025">
+                <input class="desiredTime" type="text" placeholder="Desired Time: 5:30 PM">
+                <textarea class="about" type="text" placeholder="* Tell us about your company:"></textarea>
+                <select class="appointmentSelect">
+                    <option value="Default">Appointment Type:</option>
+                    <option value="Online">Online</option>
+                    <option value="In Person">In Person</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input class="appointmentType" type="text" placeholder="Appointment Type:">
+                <button onclick="sendEmail()">Schedule Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="appointment.js"></script>
+
+</body>
+</html>

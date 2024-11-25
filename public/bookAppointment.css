@@ -1,0 +1,177 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.pricing a, .contact a, .about a{
+    color: rgb(95, 95, 250);
+    text-decoration: none;
+}
+
+.login a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.signUp a{
+    color: rgb(95, 95, 250);
+    text-decoration: none;
+}
+
+.signUp a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: max-content;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgb(100, 111, 255), rgb(74, 72, 220));
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.Header{
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.rightOptions, .leftOptions{
+    flex: 1;
+}
+
+.rightOptions{
+    display: flex;
+    justify-content: end;
+    gap: 1vw;
+}
+
+.leftOptions{
+    display: flex;
+    justify-content: start;
+    gap: 1.5vw;
+}
+
+.rightOptions button{
+    font-size: clamp(.5rem, 2vw, 1.5rem);
+    padding-left: clamp(.75rem, .75vw, 1rem);
+    padding-right: clamp(.75rem, 1vw, 1rem);
+    padding: clamp(.5rem, .75vw, .75rem);
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.signUp{
+    color: rgb(103, 103, 239);
+    border: 3px solid rgb(103, 103, 239);
+    background: none;
+    transition: .25s;
+}
+.signUp:hover{
+    color: white;
+    background-color: rgb(103, 103, 239);
+    border: 3px solid rgb(103, 103, 239);
+    transform: scale(1.1);
+}
+
+.login{
+    background-color: rgb(103, 103, 239);
+    border: none;
+    color: white;
+    transition: .25s;
+}
+.login:hover{
+    background-color: rgb(82, 82, 198);
+    border: none;
+    color: white;
+    transform: scale(1.1);
+}
+
+.leftOptions button{
+    font-size: clamp(.5rem, 2.5vw, 2rem);
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: rgb(95, 95, 250);
+    transition: .25s;
+}
+.leftOptions button:hover{
+    color: rgb(74, 74, 208);
+    transform: scale(1.1);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 3vw;
+    width: 50%;
+    box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.25);
+}
+
+.container{
+    flex-direction: column;
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container h1{
+    font-size: clamp(.25rem, 5vw, 6rem);
+    color: white;
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+
+form input, form textarea, form select, form button{
+    font-size: clamp(.25rem, 2.5vw, 2rem);
+    padding: clamp(.1rem, 1vw, 1rem);
+    background: none;
+    box-shadow: .35vw .35vw .75vw rgba(0, 0, 0, 0.25);
+    border-radius: 2vw;
+    border: clamp(.05rem, .5vw, .35rem) solid rgb(101, 108, 238);
+    color: rgb(101, 108, 238);
+    transition: .5s;
+}
+
+textarea{
+    resize: none;
+}
+
+
+form button:hover{
+    color: white;
+    background-color: rgb(101, 108, 238);
+    cursor: pointer;
+}
+
+input::placeholder, textarea::placeholder{
+    color: rgb(101, 108, 238, .75);
+}
+
+form{
+    border-radius: 2vw;
+    background: linear-gradient(white, rgb(183, 206, 255));
+}
