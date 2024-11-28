@@ -10,7 +10,7 @@ const Phone = document.querySelector(".phone");
 const Company = document.querySelector(".company");
 const DesiredDate = document.querySelector(".desiredDate");
 const DesiredTime = document.querySelector(".desiredTime");
-const About = document.querySelector(".about");
+const About = document.querySelector(".aboutTxt");
 otherAppType.style = "display: none";
 
 AppointmentType.addEventListener("change", function(){
@@ -22,6 +22,7 @@ AppointmentType.addEventListener("change", function(){
 });
 
 function sendEmail(){
+    console.log(About.value);
     if(Email.value != "" && FName.value != "" && Phone.value != "" && About.value != ""){
         var params = {
             email: Email.value,
@@ -50,21 +51,11 @@ function sendEmail(){
                 DesiredDate.value = "";
                 DesiredTime.value = "";
                 About.value = "";
-                AppointmentType.value = "";
                 otherAppType.value = "";
                 alert("Your Appointment Has Been Sent! Thank You");
+                location.reload();
             }
         )
 
-        Email.value = "";
-        FName.value = "";
-        LName.value = "";
-        Phone.value = "";
-        Company.value = "";
-        DesiredDate.value = "";
-        DesiredTime.value = "";
-        About.value = "";
-        AppointmentType.value = "";
-        otherAppType.value = "";
     }
 }
