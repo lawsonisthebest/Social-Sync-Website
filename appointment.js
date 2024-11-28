@@ -22,36 +22,49 @@ AppointmentType.addEventListener("change", function(){
 });
 
 function sendEmail(){
-    var params = {
-        email: Email.value,
-        fName: FName.value,
-        lName: LName.value,
-        phone: Phone.value,
-        company: Company.value,
-        desiredDate: DesiredDate.value,
-        desiredTime: DesiredTime.value,
-        about: About.value,
-        appointmentType: AppointmentType.value,
-        otherType: otherAppType.value
-    };
+    if(Email.value != "" && FName.value != "" && Phone.value != "" && About.value != ""){
+        var params = {
+            email: Email.value,
+            fName: FName.value,
+            lName: LName.value,
+            phone: Phone.value,
+            company: Company.value,
+            desiredDate: DesiredDate.value,
+            desiredTime: DesiredTime.value,
+            about: About.value,
+            appointmentType: AppointmentType.value,
+            otherType: otherAppType.value
+        };
+    
+        const serviceID = "service_tewi69i";
+        const templateID = "template_08c4ml5";
+    
+        emailjs.send(serviceID, templateID, params)
+        .then(
+            (res) =>{
+                Email.value = "";
+                FName.value = "";
+                LName.value = "";
+                Phone.value = "";
+                Company.value = "";
+                DesiredDate.value = "";
+                DesiredTime.value = "";
+                About.value = "";
+                AppointmentType.value = "";
+                otherAppType.value = "";
+                alert("Your Appointment Has Been Sent! Thank You");
+            }
+        )
 
-    const serviceID = "service_tewi69i";
-    const templateID = "template_08c4ml5";
-
-    emailjs.send(serviceID, templateID, params)
-    .then(
-        (res) =>{
-            Email.value = "";
-            FName.value = "";
-            LName.value = "";
-            Phone.value = "";
-            Company.value = "";
-            DesiredDate.value = "";
-            DesiredTime.value = "";
-            About.value = "";
-            AppointmentType.value = "";
-            otherAppType.value = "";
-            alert("Your Appointment Has Been Sent! Thank You");
-        }
-    )
+        Email.value = "";
+        FName.value = "";
+        LName.value = "";
+        Phone.value = "";
+        Company.value = "";
+        DesiredDate.value = "";
+        DesiredTime.value = "";
+        About.value = "";
+        AppointmentType.value = "";
+        otherAppType.value = "";
+    }
 }
