@@ -28,7 +28,13 @@
     text-decoration: none;
 }
 
+.customize a{
+    color: white;
+    text-decoration: none;
+}
+
 body{
+    overscroll-behavior: none;
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
