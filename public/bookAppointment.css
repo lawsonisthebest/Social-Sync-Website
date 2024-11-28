@@ -30,7 +30,8 @@ body{
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
-    background: linear-gradient(rgb(100, 111, 255), rgb(74, 72, 220));
+    background: rgb(100, 111, 255);
+    overscroll-behavior: none;
 }
 
 html{
@@ -119,7 +120,7 @@ html{
 }
 
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -145,7 +146,7 @@ form{
     margin-bottom: 2vw;
 }
 
-form input, form textarea, form select, form button{
+.form input, textarea, .form select, .form button{
     font-size: clamp(.25rem, 2.5vw, 2rem);
     padding: clamp(.1rem, 1vw, 1rem);
     background: none;
@@ -161,7 +162,7 @@ textarea{
 }
 
 
-form button:hover{
+.form button:hover{
     color: white;
     background-color: rgb(101, 108, 238);
     cursor: pointer;
@@ -171,7 +172,7 @@ input::placeholder, textarea::placeholder{
     color: rgb(101, 108, 238, .75);
 }
 
-form{
+.form{
     border-radius: 2vw;
     background: linear-gradient(white, rgb(183, 206, 255));
 }
