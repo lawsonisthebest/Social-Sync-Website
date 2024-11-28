@@ -1,0 +1,321 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+a{
+    color: rgb(95, 95, 250);
+    text-decoration: none;
+}
+
+body{
+    width: 100;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    height: 100vh;
+    background: rgb(100, 111, 255);
+    overscroll-behavior: none;
+    align-items: center;
+    display: flex;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.signUp a{
+    color: rgb(95, 95, 250);
+    text-decoration: none;
+}
+
+.signUp a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.login a{
+    color: white;
+}
+
+.loginBtn{
+    font-size: clamp(1rem,3vw,2rem);
+    padding-left: 3vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 3vw;
+    background: rgb(126, 126, 244);
+    box-shadow: 0.25vw 0.25vw .5vw rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+    border-radius: 5vw;
+    border: none;
+    margin-top: clamp(0.1rem,2vw,2.5rem);
+    cursor: pointer;
+    transition: .5s;
+}
+.loginBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.signUpBtn{
+    color: rgb(255, 255, 255);
+    font-size: clamp(1rem,1.25vw,1.5rem);
+    margin-top: clamp(0.1rem,1vw,1rem);
+    cursor: pointer;
+    text-underline-offset: 3px;
+    transition: .5s;
+}
+.signUpBtn:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.Header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.rightOptions, .leftOptions{
+    flex: 1;
+}
+
+.rightOptions{
+    display: flex;
+    justify-content: end;
+    gap: 1vw;
+    margin-right: 35px;
+}
+
+.leftOptions{
+    margin-left: 35px;
+    display: flex;
+    justify-content: start;
+    gap: 1.5vw;
+}
+
+.rightOptions button{
+    font-size: clamp(.5rem, 2vw, 1.5rem);
+    padding-left: clamp(.75rem, .75vw, 1rem);
+    padding-right: clamp(.75rem, 1vw, 1rem);
+    padding: clamp(.5rem, .75vw, .75rem);
+    border-radius: 1vw;
+    cursor: pointer;
+}
+.body{
+    margin: 0;
+    padding: 0;
+}
+.signUp{
+    color: rgb(103, 103, 239);
+    border: 3px solid rgb(103, 103, 239);
+    background: none;
+    transition: .25s;
+}
+.signUp:hover{
+    color: white;
+    background-color: rgb(103, 103, 239);
+    border: 3px solid rgb(103, 103, 239);
+    transform: scale(1.1);
+}
+
+.login{
+    background-color: rgb(103, 103, 239);
+    border: none;
+    color: white;
+    transition: .25s;
+}
+.login:hover{
+    background-color: rgb(82, 82, 198);
+    border: none;
+    color: white;
+    transform: scale(1.1);
+}
+
+.leftOptions button{
+    font-size: clamp(.5rem, 2.5vw, 2rem);
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: rgb(95, 95, 250);
+    transition: .25s;
+}
+.leftOptions button:hover{
+    color: rgb(74, 74, 208);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: clamp(1rem,5vw,4rem);
+}
+
+.container div{
+    text-align: left;
+}
+
+*{
+    text-align: left;
+}
+
+h1{
+    color: white;
+    font-size: clamp(1rem,5.5vw,4.5rem);
+    text-decoration: und;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, .2);
+    margin-bottom: 0;
+    text-decoration: underline;
+    text-underline-offset: clamp(.1rem,.75vw,1.25rem);
+}
+
+.options1{
+    display: flex;
+    flex-direction: column;
+    gap: .65vw;
+    margin: 0;
+    padding: 0;
+}
+
+.options1 .opt button{
+    font-size: clamp(1rem,3vw,2.5rem);
+    background: none;
+    border: none;
+    color: white;
+    opacity: .5;
+    transition: .5s;
+    margin: 0;
+    padding: 0;
+    font-weight: 350;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, .2);
+}
+
+.options1 .opt button:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.options2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 85%;
+}
+
+
+.options2 .opt{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.options2 .opt p{
+    text-align: left;
+    font-size: clamp(1rem,2.5vw,2.5rem);
+    margin: clamp(.1rem,1vw,1rem);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, .2);
+    font-weight: 400;
+}
+
+.options2 .opt h2{
+    font-size: clamp(1rem,2.5vw,2.5rem);
+    margin: clamp(.1rem,1vw,1rem);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, .2);
+}
+
+.options2 .opt input{
+    width: 50%;
+    text-align: left;
+    margin: 0;
+}
+
+input[type='range'] {
+    -webkit-appearance:none;
+    padding: clamp(.1rem,.35vw,.5rem);
+    background-color: rgb(193, 193, 255);
+    border-radius: 5vw;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+    cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: clamp(.1rem,2vw,1.5rem);
+    -webkit-appearance: none;
+    aspect-ratio: 1;
+    background: rgb(154, 113, 255);
+    border-radius: 10vw;
+    cursor: pointer;
+  }
+
+.container div p{
+    margin-top: clamp(.1rem,.25vw,.5rem);
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, .2);
+}
+
+.container div h2{
+    font-size: clamp(1rem,2vw,2rem);
+    margin-top: clamp(.1rem,.25vw,.5rem);
+    width: 100%;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, .2);
+    margin-bottom: 0;
+}
+
+.options3 div input{
+    margin-top: clamp(.1rem,.5vw,2.5rem);
+    margin-left: 0;
+    width: clamp(.1rem,2vw,2.5rem);
+    aspect-ratio: 1;
+}
+
+.options4 h3{
+    font-size: clamp(1rem,2.5vw,4rem);
+    color: white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, .2);
+}
+.options4 h4{
+    font-size: clamp(1rem,2vw,3rem);
+    color: white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, .2);
+}
+
+h5{
+    color: white;
+    font-size: clamp(.25rem,1.5vw,2rem);
+    font-weight: 300;
+}
