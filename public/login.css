@@ -9,29 +9,28 @@ a{
 }
 
 body{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    width: 100;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background: linear-gradient(rgb(100, 111, 255), rgb(74, 72, 220));
+    background: rgb(100, 111, 255);
+    overscroll-behavior: none;
+    align-items: center;
+    display: flex;
 }
 
 .body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 html{
     scroll-behavior: smooth;
 }
-
 .errorTxt{
     font-size: clamp(0.5rem,2.5vw,1.5rem);
     margin-top: 0.75vw;
@@ -127,12 +126,13 @@ input::placeholder{
 }
 
 .Header{
-    padding-left: 35px;
-    padding-right: 35px;
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: rgb(255, 255, 255);
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .rightOptions, .leftOptions{
@@ -143,9 +143,11 @@ input::placeholder{
     display: flex;
     justify-content: end;
     gap: 1vw;
+    margin-right: 35px;
 }
 
 .leftOptions{
+    margin-left: 35px;
     display: flex;
     justify-content: start;
     gap: 1.5vw;
@@ -159,7 +161,10 @@ input::placeholder{
     border-radius: 1vw;
     cursor: pointer;
 }
-
+.body{
+    margin: 0;
+    padding: 0;
+}
 .signUp{
     color: rgb(103, 103, 239);
     border: 3px solid rgb(103, 103, 239);
@@ -197,4 +202,18 @@ input::placeholder{
 .leftOptions button:hover{
     color: rgb(74, 74, 208);
     transform: scale(1.1);
+}
+
+.body h1{
+    font-size: clamp(.5rem, 6vw, 6rem);
+    margin: 0;
+    color: white;
+}
+
+.body p{
+    font-size: clamp(.5rem, 1.5vw,1.5rem);
+    width: 50vw;
+    text-align: center;
+    margin: 1.5vw;
+    color: white;
 }
