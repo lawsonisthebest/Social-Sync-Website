@@ -3,72 +3,19 @@
     font-weight: 600;
 }
 
-a{
+.pricing a, .contact a, .about a{
     color: rgb(95, 95, 250);
     text-decoration: none;
 }
 
-body{
-    width: 100;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    background: rgb(100, 111, 255);
-    overscroll-behavior: none;
-    align-items: center;
-    display: flex;
+.login a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-.body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-.errorTxt{
-    font-size: clamp(0.5rem,2.5vw,1.5rem);
-    margin-top: 0.75vw;
-    color: rgb(232, 87, 87);
-    margin-bottom: 0;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    padding: clamp(0.1rem,4vw,3.5rem);
-    border-radius: 2vw;
-    background: linear-gradient(rgb(246, 247, 255), #cfcfff);
-    box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.25);
-}
-
-.inputs{
-    display: flex;
-    flex-direction: column;
-    gap: clamp(0.1rem,1.25vw,1rem);
-}
-
-input{
-    font-size: clamp(1rem,4vw,2.5rem);
-    padding: .75vw;
-    padding-left: 2vw;
-    color: rgb(129, 112, 224);
-    border: clamp(0.15rem,.5vw, .35rem) solid rgb(129, 112, 224, 0.75);
-    border-radius: 5vw;
-    box-shadow: 0.25vw 0.25vw .75vw rgba(0, 0, 0, 0.25);
-    background: none;
-}
-
-input::placeholder{
-    color: rgb(129, 112, 224);
+.bookAppointment a{
+    text-decoration: none;
+    color: rgb(95, 95, 250);
 }
 
 .signUp a{
@@ -81,42 +28,23 @@ input::placeholder{
     text-decoration: none;
 }
 
-.loginBtn{
-    font-size: clamp(1rem,3vw,2rem);
-    padding-left: 3vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    padding-right: 3vw;
-    background: rgb(126, 126, 244);
-    box-shadow: 0.25vw 0.25vw .5vw rgba(0, 0, 0, 0.25);
-    color: rgb(255, 255, 255);
-    border-radius: 5vw;
-    border: none;
-    margin-top: clamp(0.1rem,2vw,2.5rem);
-    cursor: pointer;
-    transition: .5s;
-}
-.loginBtn:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+.customize a{
+    color: white;
+    text-decoration: none;
 }
 
-.signUpBtn{
-    color: rgb(255, 255, 255);
-    font-size: clamp(1rem,1.25vw,1.5rem);
-    margin-top: clamp(0.1rem,1vw,1rem);
-    cursor: pointer;
-    text-underline-offset: 3px;
-    transition: .5s;
-}
-.signUpBtn:hover{
-    transform: scale(1.1);
+body{
+    overscroll-behavior: none;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-
-
+html{
+    scroll-behavior: smooth;
+}
 
 .header{
     width: 100%;
@@ -126,13 +54,12 @@ input::placeholder{
 }
 
 .Header{
+    padding-left: 35px;
+    padding-right: 35px;
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+
 }
 
 .rightOptions, .leftOptions{
@@ -143,11 +70,9 @@ input::placeholder{
     display: flex;
     justify-content: end;
     gap: 1vw;
-    margin-right: 35px;
 }
 
 .leftOptions{
-    margin-left: 35px;
     display: flex;
     justify-content: start;
     gap: 1.5vw;
@@ -161,10 +86,7 @@ input::placeholder{
     border-radius: 1vw;
     cursor: pointer;
 }
-.body{
-    margin: 0;
-    padding: 0;
-}
+
 .signUp{
     color: rgb(103, 103, 239);
     border: 3px solid rgb(103, 103, 239);
@@ -204,16 +126,320 @@ input::placeholder{
     transform: scale(1.1);
 }
 
-.body h1{
-    font-size: clamp(.5rem, 6vw, 6rem);
+
+
+
+
+.slide1{
+    background: linear-gradient(rgb(100, 111, 255), rgb(74, 72, 220));
+    padding-top: 7.5vw;
+    padding-bottom: 7.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    transition: .5s;
+}
+
+.slide1 .img img{
+    width: 37.5vw;
+    border-radius: 2vw;
+    flex: 1;
     margin: 0;
+    padding: 0;
+    box-shadow: 5px 5px 6px rgb(0, 0, 0, 0.35);
+}
+
+.slide1 .info .title{
+    color: white;
+    font-size: 4vw;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+
+}
+
+.slide1 .info{
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.slide1 .info h1, .slide1 .info ul, .slide1 .info button, .slide1 .info ul li p{
+    margin: 0;
+    text-align: left;
+}
+
+.slide1 .info ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    color: white;
+    gap: 15px;
+    font-size: 1.5vw;
+
+}
+.slide1 .info ul li{
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+}
+.slide1 .info button{
+    width: max-content;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 2vw;
+    color: rgb(89, 89, 232);
+    background-color: white;
+    border-radius: 15vw;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+    transition: .5s;
+}
+.slide1 .info button:hover{
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.25);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.slide2{
+    transition: .5s;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide2 .info{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide2 .info h1{
+    color: rgb(89, 89, 232);
+    margin-top: 2.5vw;
+    margin-bottom: 0;
+    font-size: 4.75vw;
+}
+.slide2 .info p{
+    font-size: 1.75vw;
+    margin: 10px;
+    padding: 0;
+    width: 75%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.slide2 .options{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex: 1fr 1fr 1fr;
+}
+
+.slide2 .options button{
+    margin-top: 5vw;
+    margin-bottom: 0;
+    width: 100%;
+    flex: 1fr 1fr 1fr;
+    transition: .5s;
+}
+.slide2 .options button p{
+    font-size: 2.5vw;
+    margin: 0;
+    font-weight: 100;
+    padding-top: 1vw;
+}
+.slide2 .options button:hover{
+    transform: scale(1.1);
+    filter: brightness(1.15);
+}
+
+.slide2 .options img{
+    border-radius: 25px;
+    width: 20vw;
+    box-shadow: 6px 6px 7px rgb(0, 0, 0, 0.30);
+    transition: .5s;
+}
+.slide2 .options img:hover{
+    border-radius: 25px;
+    width: 20vw;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.25);
+}
+.slide2 .info button{
+    margin-top: 3vw;
+    width: max-content;
+    padding-left: 1.75vw;
+    padding-right: 1.75vw;
+    padding-top: .75vw;
+    padding-bottom: .75vw;
+    font-size: 2vw;
+    background-color: rgb(89, 89, 232);
+    color: white;
+    border-radius: 1.25vw;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+    transition: .5s;
+}
+.slide2 .info button:hover{
+    transform: scale(1.1);
+    background-color: rgb(80, 80, 182);
+}   
+
+
+
+
+
+.slide3{
+    transition: .5s;
+    background: linear-gradient(rgb(125, 125, 255), rgb(57, 72, 187));
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+}
+
+.slide3 .container .options h1{
+    font-size: 3.5vw;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.slide3 .container .options{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    justify-content: center;
+}
+
+.slide3 .container .options ul{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.75vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    text-align: left;
+    padding: 0;
+}
+
+.slide3 .container .options ul li p{
+    font-weight: 500;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+    color: white;
+    text-align: left;
+    margin-left: 0;
+    padding: 0;
+}
+
+.slide3 .container .options .description2{
+    width: 75%;
+    font-size: 1.5vw;
+    margin: 0;
+    font-weight: 300;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
     color: white;
 }
 
-.body p{
-    font-size: clamp(.5rem, 1.5vw,1.5rem);
-    width: 50vw;
+.slide3 .container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.slide3 .container video{
+    margin-right: 2.5vw;
+    width: 35vw;
+    border-radius: 3vw;
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.25);
+}
+
+
+
+.slide4{
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    padding-bottom: 2vw;
+    flex-direction: row;
+    gap: 3vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    transform: scale(.85);
+    background: white;
+}
+
+.slide4 .info h1{
     text-align: center;
-    margin: 1.5vw;
-    color: white;
+    color: rgb(89, 89, 232);
+    font-size: 4.5vw; 
+    margin: 0;
+    padding-bottom: 2vw;   
+}
+
+.slide4 .details p{
+    font-size: 2vw; 
+    margin: 0;  
+    text-align: center;
+    font-weight: 400;
+    padding: 0;
+    flex: 1;
+}
+
+.slide4 .details a{
+    color: rgb(89, 89, 232);
+    font-size: 2vw; 
+    margin: 0;  
+    flex: 1; 
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.slide4 .details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.container1{
+    flex: 1;
+    margin: 0;
+}
+.container2{
+    flex: 1;
+    margin: 0;
 }
